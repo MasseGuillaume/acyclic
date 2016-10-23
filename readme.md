@@ -174,11 +174,11 @@ How to Use
 To use, add the following to your `build.sbt`:
 
 ```scala
-libraryDependencies += "com.lihaoyi" %% "acyclic" % "0.1.4" % "provided"
+libraryDependencies += "com.lihaoyi" %% "acyclic" % "0.1.5" % "provided"
 
 autoCompilerPlugins := true
 
-addCompilerPlugin("com.lihaoyi" %% "acyclic" % "0.1.4")
+addCompilerPlugin("com.lihaoyi" %% "acyclic" % "0.1.5")
 ```
 
 If you are on Scala 2.10.x, you may need an additional compile-time dependency:
@@ -202,8 +202,9 @@ Acyclic has problems in a number of cases:
 ChangeLog
 =========
 
-**0.1.4**: Loosen restrictions on compiler plugin placement, to allow better interactions with other plugins. Also, `acyclic.file` is now `@compileTimeOnly` to provide better errors
-**0.1.3**: Ignore, but don't crash, on Java sources
+* **0.1.5**: Cross build to Scala 2.12.0-RC2
+* **0.1.4**: Loosen restrictions on compiler plugin placement, to allow better interactions with other plugins. Also, `acyclic.file` is now `@compileTimeOnly` to provide better errors
+* **0.1.3**: Ignore, but don't crash, on Java sources
 
 MIT License
 ===========
